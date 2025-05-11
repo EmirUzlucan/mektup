@@ -337,11 +337,14 @@
 
         envelope.addEventListener('click', () => {
             fullMessage.style.display = 'flex';
+            envelope.style.display = 'none'; // Zarf ve imleci gizle
         });
 
         closeBtn.addEventListener('click', () => {
             fullMessage.style.display = 'none';
+            envelope.style.display = 'block'; // Zarf ve imleci geri getir
         });
+
 
         const clouds = document.querySelectorAll(".cloud");
         const screenWidth = window.innerWidth;
